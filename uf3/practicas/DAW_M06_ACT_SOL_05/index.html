@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="custom.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <form action="test.php" method="post" name="form-main">
+        <div>
+            <label for="nombre" >Nombre</label>
+            <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="10"><span></span>
+        </div>
+        <div>
+            <label for="correo" >Correo</label>
+            <input type="email" name="correo" id="correo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><span></span>
+        </div>
+        <div>
+            <label for="telefono" >Telefono</label>
+            <input type="tel" name="telefono" id="telefono" required pattern="[0-9]{9}"><span></span>
+        </div>
+        <div>
+            <label for="pass1" >Contraseña</label>
+            <input type="password" name="pass1" id="pass1" required minlength="4" maxlength="10"><span></span>
+        </div>
+        <div>
+            <label for="pass2" >Repetir contraseña</label>
+            <input id="pass2inp" type="password" name="pass2" id="pass2" required minlength="4" maxlength="10">
+            <span id="checkpass"></span>
+        </div>
+
+        <input type="date" required name="calendario" id="calendario"><span></span>
+
+        <div>Elige tu Sistema Operativo</div>
+        <button id="addSO">Añadir un nuevo Sistema Operativo</button><br>
+
+        <select  name="sisoper" id="sisoper" multiple>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+        </select>
+
+        <div>
+           Elige tu género de música preferido </div>
+           <button id="addMusic" >Añadir un nuevo Género Musical</button><br>
+       
+        <div id="groupMusic">
+            <input type="checkbox" id="musica1" name="musica" value="Rock"><span>Rock</span>
+            <input type="checkbox" id="musica2" name="musica" value="Rap"><span>Rap</span>
+            <input type="checkbox" id="musica3" name="musica" value="Techno"><span>Techno</span>
+        </div>
+
+        <div>
+            <textarea name="descripcion" readonly id="descripcion" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+            <input class="btn" type="submit" name="enviar" value="Enviar">
+        </div>
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>

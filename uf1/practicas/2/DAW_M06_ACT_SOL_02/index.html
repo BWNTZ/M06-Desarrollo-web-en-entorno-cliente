@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="objetosPredef.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+      <div id="listaPropiedades"> </div>
+
+    <!--  
+          2a.  Al clicar sobre el 1r botón se muestre en index.html el texto:
+               “Estoy aprendiendo JavaScript”.
+          2b.  Cada vez que clique en el 2o botón  se muestre dentro de index.html 
+               un número aleatorio entre 0 y 10. 
+    -->
+      <button onclick="muestraMensajeMadre()">Mostrar el mensaje </button>
+      <button onclick="generaAleatorio()">Genera un número aleatorio</button><br><br>
+
+    <!--   3.  Añade al HTML un input con id=url y un botón
+               que al clicarlo establezca como valor de la cookie “url_usuario”
+               el texto introducido por el usuario dentro del input. 
+    -->
+      <input type="text" id="url" />
+      <button onclick="setCookie()">SET COOKIE</button>
+    <!--	
+           5.  Añade al HTML un botón con el texto “ABRE VENTANA”.
+               Programa que al clicarlo se abra una nueva ventana “nueva_ventana.html” y 
+               que pasados 5 segundos la ventana se cierre. La nueva ventana ha de ser de 400x400px, 
+               sin barra de menús y situada en medio de la pantalla. 
+    -->
+
+      <button onclick="openNuevaVentana()">ABRE VENTANA</button><br>
+      <div id="mensaje"></div>
+    </body>
+</html>

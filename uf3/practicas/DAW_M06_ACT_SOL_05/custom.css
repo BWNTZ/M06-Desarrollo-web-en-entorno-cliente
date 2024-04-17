@@ -1,0 +1,26 @@
+
+h1,h2,h3,h4,h5,h6,p,span{
+    font-size: 12px;
+    color: black;
+}
+/* Text colors */
+.color-red{
+    color: red;
+}
+.color-green{
+    color: green;
+}
+/* Background Colors */
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+/* Border Colors */
+.border-red{
+    border-color: red;
+}
+.border-green{
+    border-color: green;
+}
